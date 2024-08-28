@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        amster:["New Amsterdam","sans-serif"],
+      },
+    },
   },
   plugins: [],
 }

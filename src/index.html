@@ -3,10 +3,99 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="output.css" />
     <title>Portfolio</title>
   </head>
   <body class="bg-red-500">
-    <h1 class="text-violet-400">Hello world</h1>
+    <section>
+      <header>
+        <nav class="flex justify-between items-center p-3 md:pr-8">
+          <h1 class="text-5xl md:text-7xl text-white font-amster">Yahya.</h1>
+          <ul
+            class="flex flex-row space-x-3 md:space-x-24 p-3 text-white font-amster text-lg md:text-2xl">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    </section>
+    <section
+      class="hero relative bg-cover text-center overflow-hidden"
+      style="background-image: url(imgs/hero.avif); height: 100vh">
+      <div class="overlay absolute inset-0 bg-red-400/40 z-10 flex">
+        <div class="flex flex-col h-full justify-center items-center w-full">
+          <div class="text-slate-100 text-left p-3">
+            <p class="font-sans text-6xl font-bold md:text-9xl">
+              Hello,My Name is Yahya.
+            </p>
+            <h2 class="text-6xl font-bold mt-3 block md:text-8xl">
+              I'm a
+              <code class="text-black tracking-wide">{web developer}</code>
+            </h2>
+          </div>
+          <button
+            class="p-3 bg-red-200 w-40 text-black text-2xl font-amster tracking-wide ring-1 ring-red-950 mt-5 hover:bg-red-400">
+            <a href="#">Hire me</a>
+          </button>
+          <div
+            class="icons text-2xl flex flex-row justify-center items-center w-full mt-6 mx-auto p-4">
+            <ul class="flex flex-row space-x-5 md:text-3xl">
+              <li>
+                <a href=""><i class="fa-brands fa-github"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="skills bg-white p-5">
+      <div class="flex flex-col sm:gap-8 pt-5 px-9 md:grid grid-cols-2 gap-8">
+        <div
+          class="skill h-40 flex flex-col justify-center items-center w-full hover:bg-red-200 ring-2 ring-red-400">
+          <h2 class="text-3xl font-amster tracking-widest">Html</h2>
+          <p class="font-mono text-lg">Experience in html</p>
+          <i class="fa-brands fa-html5 text-red-500 text-4xl"></i>
+        </div>
+        <div
+          class="skill h-40 flex flex-col justify-center items-center w-full hover:bg-red-200 ring-2 ring-red-400">
+          <h2 class="text-3xl font-amster tracking-widest">CSS</h2>
+          <p class="font-mono text-lg">Experience in <code>CSS</code></p>
+          <i class="fa-brands fa-css3-alt text-red-500 text-4xl"></i>
+        </div>
+        <div
+          class="skill h-40 flex flex-col justify-center items-center w-full hover:bg-red-200 ring-2 ring-red-400">
+          <h2 class="text-3xl font-amster tracking-widest">Javascript</h2>
+          <p class="font-mono text-lg">Experience in Javascript</p>
+          <i class="fa-brands fa-js text-red-500 text-4xl"></i>
+        </div>
+        <div
+          class="skill h-40 flex flex-col justify-center items-center w-full hover:bg-red-200 ring-2 ring-red-400">
+          <h2 class="text-3xl font-amster tracking-widest">Figma Ux</h2>
+          <p class="font-mono text-lg">Experience in Figma</p>
+          <i class="fa-brands fa-figma text-red-500 text-4xl"></i>
+        </div>
+      </div>
+    </section>
+    <section class="projects"></section>
+    <section class="form"></section>
+    <section class="footer"></section>
   </body>
 </html>
