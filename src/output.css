@@ -769,6 +769,10 @@ video {
   width: 90%;
 }
 
+.w-\[80\%\]{
+  width: 80%;
+}
+
 .min-w-0{
   min-width: 0px;
 }
@@ -1439,6 +1443,14 @@ video {
 
   .md\:grid{
     display: grid;
+  }
+
+  .md\:w-\[80\%\]{
+    width: 80%;
+  }
+
+  .md\:w-10{
+    width: 2.5rem;
   }
 
   .md\:space-x-5 > :not([hidden]) ~ :not([hidden]){
